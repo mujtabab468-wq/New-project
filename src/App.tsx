@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CustomCursor } from './components/CustomCursor.tsx';
 import { ScrollProgressBar } from './components/ScrollProgressBar.tsx';
 import { HeroSection } from './components/HeroSection.tsx';
 import { MarqueeSection } from './components/MarqueeSection.tsx';
@@ -16,6 +17,9 @@ export default function App() {
       className="bg-[#0C0C0C] text-[#D7E2EA] min-h-screen selection:bg-[#B600A8]/30 selection:text-white"
       style={{ overflowX: 'clip' }}
     >
+      {/* Custom Circular Cursor */}
+      <CustomCursor />
+
       {/* Scroll Progress Bar */}
       <ScrollProgressBar />
 
